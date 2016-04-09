@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <ScrollView
+        android:id="@+id/fragment_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/current_weather_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8dp"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/primaryTextSize"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:background="@color/textPrimaryColor"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dimen_16dp"
+                        android:src="@drawable/ic_cloud"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <include
+                            android:id="@+id/feels_like_temp"
+                            layout="@layout/weather_detail_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"/>
+
+                        <include
+                            android:id="@+id/humidity"
+                            layout="@layout/weather_detail_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"/>
+
+                        <include
+                            android:id="@+id/cloud"
+                            layout="@layout/weather_detail_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"/>
+
+                        <include
+                            android:id="@+id/rainfall"
+                            layout="@layout/weather_detail_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/other_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8dp"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind &amp; Pressure"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/primaryTextSize"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:background="@color/textSecondaryColor"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/wind"
+                        layout="@layout/daily_forecast_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"/>
+
+                    <include
+                        android:id="@+id/pressure"
+                        layout="@layout/weather_detail_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"/>
+
+                    <include
+                        android:id="@+id/sea_level"
+                        layout="@layout/weather_detail_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"/>
+
+                    <include
+                        android:id="@+id/grnd_level"
+                        layout="@layout/weather_detail_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

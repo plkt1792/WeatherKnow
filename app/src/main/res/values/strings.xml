@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather Know</string>
+    <string name="location_permission_message">Location permission is needed to detect your current
+        location.
+    </string>
+    <string name="forecast">Forecast</string>
+    <string name="temp_txt">%.2f &#176;</string>
+    <string name="degree"> &#176;</string>
+</resources>

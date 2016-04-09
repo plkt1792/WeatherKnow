@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dimen_8dp"
+              android:paddingLeft="@dimen/dimen_8dp"
+              android:paddingRight="@dimen/dimen_8dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="@dimen/smallTextSize"
+        tools:text="26/11/2016"/>
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="@dimen/smallTextSize"
+        android:textStyle="bold"
+        tools:text="08:00 AM"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="@dimen/smallTextSize"
+        android:textStyle="bold"
+        tools:text="88.88 * C"/>
+
+</LinearLayout>
